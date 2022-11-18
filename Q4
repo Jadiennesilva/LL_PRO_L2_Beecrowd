@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main (){
+    int N, J, S = 0, a;
+    
+    scanf ("%d", &N);
+    
+    for (int n = 1; n <= N; n = 1+n){
+        scanf ("%d", &J);
+        a = J/2;
+       
+        for (int b = 1; b <= a; b = b+1){
+            if (J% b == 0){
+                S = S + b;
+            }
+          
+            if (S == J){
+                printf ("%d eh perfeito\n", J);
+            } else {
+                printf ("%d nao eh perfeito\n", J);
+            }
+    }
+        }
+    
+    
+    return 0;
+}
